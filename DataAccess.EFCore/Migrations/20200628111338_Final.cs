@@ -2,7 +2,7 @@
 
 namespace DataAccess.EFCore.Migrations
 {
-    public partial class Initial1 : Migration
+    public partial class Final : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +12,8 @@ namespace DataAccess.EFCore.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true)
+                    Name = table.Column<string>(nullable: true),
+                    Followers = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

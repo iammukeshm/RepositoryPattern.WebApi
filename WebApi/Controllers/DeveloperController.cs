@@ -38,7 +38,8 @@ namespace WebApi.Controllers
             };
             _unitOfWork.Developers.Add(developer);
             _unitOfWork.Projects.Add(project);
-            return Ok(_unitOfWork.Complete());
+            _unitOfWork.Complete();
+            return Ok();
 
         }
     }
