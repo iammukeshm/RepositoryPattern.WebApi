@@ -9,7 +9,7 @@ namespace DataAccess.EFCore.Repositories
 {
     public class DeveloperRepository : GenericRepository<Developer>, IDeveloperRepository
     {
-        public DeveloperRepository(ApplicationContext context):base(context)
+        public DeveloperRepository(ApplicationContext context) : base(context)
         {
         }
         public IEnumerable<Developer> GetPopularDevelopers(int count)

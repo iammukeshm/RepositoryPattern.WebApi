@@ -8,8 +8,8 @@ namespace DataAccess.EFCore.Repositories
 {
     public class ProjectRepository : GenericRepository<Project>, IProjectRepository
     {
-        public ProjectRepository(ApplicationContext context): base(context)
-        { 
+        public ProjectRepository(ApplicationContext context) : base(context)
+        {
         }
     }
 }
